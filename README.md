@@ -2,6 +2,14 @@
 
 A real-time parking facility monitoring system built with Django REST Framework and React.
 
+## Screenshorts
+
+Dashboard
+![Main Dashboard](img/image1.png)
+Alerts
+![Alerts](img/image2.png)
+
+
 ## Completed Features
 
 ### Backend (Django + DRF)
