@@ -1,0 +1,146 @@
+.alert-panel {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.alert-header h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.alert-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background: #f9fafb;
+}
+
+.filter-btn.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alert-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.alert-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alert-item.acknowledged {
+  opacity: 0.6;
+}
+
+.alert-indicator {
+  width: 4px;
+  height: 60px;
+  border-radius: 2px;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-title {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.severity-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background: #6b7280;
+}
+
+.alert-item.critical .severity-badge {
+  background: #ef4444;
+}
+
+.alert-item.warning .severity-badge {
+  background: #f59e0b;
+}
+
+.alert-item.info .severity-badge {
+  background: #3b82f6;
+}
+
+.alert-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.alert-message {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.alert-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.acknowledge-btn {
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.acknowledge-btn:hover {
+  background: #2563eb;
+}
+
+.no-alerts {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+}
